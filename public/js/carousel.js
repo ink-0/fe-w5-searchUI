@@ -1,44 +1,42 @@
-const carouselSlide = document.querySelector('.slide__list');
-const carouselContents = document.querySelectorAll('.slide__item');
+import {factors} from "./util.js";
+const {slideItems , slideList, prevBtn, nextBtn} = factors;
 
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-
-console.log(carouselContents);
-console.log(nextBtn);
 let counter =1;
-const size = carouselContents[0].clientWidth;
-const len = carouselContents.length;
+// const size = slideItems[0].clientWidth;
+const size = 485;
+console.log("size는 뭐야 ",size);
+const len = slideItems.length;
+console.log("len는 뭐야 ",len );
 console.log(len);
-carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+slideList.style.transform = "translateX(" + -size * counter + "px)";
 
 //ease-in-out 효과가 천천히 시작해 천천히 끝남 
 nextBtn.addEventListener('click',()=>{
     if(counter>=len-1) return;
-    carouselSlide.style.transition = "transform 0.3s ease-in-out"
+    slideList.style.transition = "transform 0.3s ease-in-out"
     counter++;
-    carouselSlide.style.transform = "translateX("+ -size*counter+"px)";
+    slideList.style.transform = "translateX("+ -size*counter+"px)";
 });
 
 
 prevBtn.addEventListener('click',()=>{
     if(counter<=0) return;
-    carouselSlide.style.transition = "transform 0.3s ease-in-out"
+    slideList.style.transition = "transform 0.3s ease-in-out"
     counter--;
-    carouselSlide.style.transform = "translateX("+ -size*counter+"px)";
+    slideList.style.transform = "translateX("+ -size*counter+"px)";
 });
 
-carouselSlide.addEventListener('transitionend',()=>{
-    if(carouselContents[counter].id === "lastClone"){
-        carouselSlide.style.transition = "none";
+slideList.addEventListener('transitionend',()=>{
+    if(slideItems[counter].id === "lastClone"){
+        slideList.style.transition = "none";
         counter = len -2;
-        carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+        slideList.style.transform = "translateX(" + -size * counter + "px)";
     }
     
-    if (carouselContents[counter].id==="firstClone"){
-        carouselSlide.style.transition = "none";
+    if (slideItems[counter].id==="firstClone"){
+        slideList.style.transition = "none";
         counter = len-counter;
-        carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+        slideList.style.transform = "translateX(" + -size * counter + "px)";
 
     }
     

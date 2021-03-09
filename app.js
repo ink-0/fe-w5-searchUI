@@ -6,14 +6,12 @@ const path = require('path');
 const cors = require('cors');
 //--------------------------------------------
 //라우터 선언
-const index_router =require('./routes/index');
-const image_router = require('./api/image');
+const index_router =require('./api/index.js');
+const image_router = require('./api/image.js');
 //미드뤠어 등록을 위해 app객체에 express객체 등록 
 const app =  express();
 app.locals.homeContents = require('./api/homeContents.json');
 app.locals.planningEvent = require('./api/planningEvent.json');
-
-
 //app.set 메서드를 통해 express 앱 설정
 app.set("view engine","ejs");
 app.engine('ejs',require('ejs').renderFile);
