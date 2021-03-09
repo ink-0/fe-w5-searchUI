@@ -7,6 +7,8 @@ const factors = {
     slideList : $(".slide__list"),
     prevBtn : $(".prev"),
     nextBtn : $(".next"),
+
+    inpSearch : $(".head__search__box")
 }
 
 

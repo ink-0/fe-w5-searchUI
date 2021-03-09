@@ -1,5 +1,6 @@
 import {factors} from "./util.js";
 
+//
 export function getBestboxImg(url) {
     let data;
     const promise = fetch(url)
@@ -23,11 +24,14 @@ export function getBestboxImg(url) {
       });
   }
 
-export function getTop10(url) {
-  let data;
-  const prmise = fetch(url)
-    .then(response =>response.json())
-    .then(json =>{
-      const
-    })
-}
+  
+// searchUI.js
+// export function getTop10(url) {
+//   let data;
+//   const promise = fetch(url)
+//     .then(response =>response.json())
+//     .then(json =>{
+//       //inpSearch 말고 데이터 들어갈 장소
+//       const {inpSearch}
+//     })
+// }

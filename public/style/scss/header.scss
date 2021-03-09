@@ -60,6 +60,9 @@ input {
         padding:15px 40px 9px 14px;
     
         input {
+            position: absolute;
+            top:17px;
+            right: inherit;
             width: 100%;
             height: 100%;
             font-size: 20px;
@@ -82,7 +85,16 @@ input {
         }
     }
 }
-
+.searchUI__box{
+    border: 1px solid #ff463f;
+    border-radius: 10px;
+    position:relative;
+    width: 670px;
+    height: 300px;
+    margin:33px 0;
+    left:-14px;
+    background-color: white;
+}
 
 .nav {
 

@@ -15,10 +15,10 @@ router.get("/image", (req, res, next) => {
   res.json(mileageListData);
 });
 
-module.exports = router;
 
 const recomKeywordData = JSON.parse(fs.readFileSync("./data/recomKeyword.json","utf8"));
 router.get("/keyword",(req,res,next)=>{
     res.json(recomKeywordData);
-    console.log("나와라얍",recomKeywordData.list[0].keyword);
+    // console.log("나와라얍",recomKeywordData.list[0].keyword);
 })
+module.exports = router;
