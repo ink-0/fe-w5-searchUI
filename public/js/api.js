@@ -8,7 +8,7 @@ export function getBestboxImg(url) {
         const {bestboxFirst, slideItems} = factors;
         data = json;
         const items = data.mileageList;
-        bestboxFirst.innerHTML = `<img src="${items[0].imgurl}">`
+        bestboxFirst.innerHTML = `<img src=${items[0].imgurl}>`
        
         slideItems[0].innerHTML = `<img src=${items[3].imgurl}>`
         slideItems[1].innerHTML = `<img src=${items[1].imgurl}>`
@@ -22,3 +22,12 @@ export function getBestboxImg(url) {
         // });
       });
   }
+
+export function getTop10(url) {
+  let data;
+  const prmise = fetch(url)
+    .then(response =>response.json())
+    .then(json =>{
+      const
+    })
+}
