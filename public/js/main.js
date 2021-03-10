@@ -6,14 +6,15 @@ import {getBestboxImg} from "./api.js";
 
 // 기능 구현 
 import {carousel} from "./carousel.js";
-import {searchUI} from "./searchUI.js";
+import {getRollingTop10} from "./searchUI.js";
 // import {searchUI} from "./searchUI,js";
 
 
 
 getBestboxImg(url);
 carousel();
-searchUI();
+
+getRollingTop10();
 // searchUI();
 
 // let data;
