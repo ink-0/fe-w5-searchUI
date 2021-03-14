@@ -107,9 +107,9 @@ input {
 }
 
 
-
-.suggestion__box{
-    // border: 1px solid #ff463f;
+.suggestion {
+    &__box{
+           // border: 1px solid #ff463f;
     // border-radius: 10px;
     // position:relative;
     // width: 670px;
@@ -117,19 +117,64 @@ input {
     // margin:33px 0;
     // left:-14px;
     // background-color: white;
-    display: none;
+    display:none;
     position: absolute;
     left: 0;
-    top: 69px;
+    top: 48px;
     z-index: 10;
     width: 670px;
-    height: 300px;
+    // height: 300px;
     border: 1px solid #f95139;
     border-radius: 10px;
     background-color: #fff;
     // background-color: blue;
     box-sizing: border-box;
     text-align: left;
+    // padding: 20px 20px;
+    overflow: hidden;
+    padding: 25px 29px 23px;
+
+    }
+
+    &__subtitle{
+        display: block;
+        padding-bottom: 5px;
+        font-size: 16px;
+        color: #a6a6a6;
+        letter-spacing: -.04em;
+    }
+
+    &__keyword{
+        overflow: hidden;
+        float: left;
+        width: 50%;
+
+        li {
+            overflow: hidden;
+            height: 33px;
+            padding: 12px 15px 0 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    &__link__keyword{
+        
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: -.05em;
+        color: #222;
+
+
+    }
+}
+.num_rank{
+    margin-right: 10px;
+    font-weight: 700;
+    color: #222;
+    font-size: 14px;
+
+
 }
 
 

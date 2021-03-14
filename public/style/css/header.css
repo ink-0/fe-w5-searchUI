@@ -80,15 +80,46 @@ input {
   display: none;
   position: absolute;
   left: 0;
-  top: 69px;
+  top: 48px;
   z-index: 10;
   width: 670px;
-  height: 300px;
   border: 1px solid #f95139;
   border-radius: 10px;
   background-color: #fff;
   box-sizing: border-box;
-  text-align: left; }
+  text-align: left;
+  overflow: hidden;
+  padding: 25px 29px 23px; }
+
+.suggestion__subtitle {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #a6a6a6;
+  letter-spacing: -.04em; }
+
+.suggestion__keyword {
+  overflow: hidden;
+  float: left;
+  width: 50%; }
+  .suggestion__keyword li {
+    overflow: hidden;
+    height: 33px;
+    padding: 12px 15px 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.suggestion__link__keyword {
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: -.05em;
+  color: #222; }
+
+.num_rank {
+  margin-right: 10px;
+  font-weight: 700;
+  color: #222;
+  font-size: 14px; }
 
 .nav {
   display: flex;

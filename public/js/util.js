@@ -9,8 +9,12 @@ const factors = {
     nextBtn : $(".next"),
 
     inpSearch : $(".head__search__box"),
+    rollingbox: $(".rolling__box"),
     rollingItems : $$(".rolling__item"),
     rollingList : $(".rolling__list"),
+
+    suggestionBox : $(".suggestion__box"),
+    suggestionItems : $$(".suggestion__keyword"),
 }
 
 

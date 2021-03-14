@@ -1,5 +1,5 @@
 import {factors} from "./util.js";
-const {rollingList,rollingItems,inpSearch} = factors;
+const {rollingbox,rollingList,rollingItems,inpSearch,suggestionBox} = factors;
 
 
 const rollingKeyword = () => {
@@ -13,6 +13,11 @@ const rollingKeyword = () => {
 
     inpSearch.addEventListener('click',()=>{
         clearTimeout(rolling);
+        rollingbox.style.display="none";
+        inpSearch.style.border = "1px solid #ff463f";
+        suggestionBox.style.display="block";
+
+
     });
     var rolling = setInterval(()=>{
         rollthekeyword()
