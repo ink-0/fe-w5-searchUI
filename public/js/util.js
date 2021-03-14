@@ -8,7 +8,9 @@ const factors = {
     prevBtn : $(".prev"),
     nextBtn : $(".next"),
 
-    inpSearch : $(".head__search__box")
+    inpSearch : $(".head__search__box"),
+    rollingItems : $$(".rolling__item"),
+    rollingList : $(".rolling__list"),
 }
 
 

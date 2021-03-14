@@ -59,15 +59,36 @@ input {
       right: 13px;
       top: 11px; }
 
-.searchUI__box {
-  border: 1px solid #ff463f;
-  border-radius: 10px;
-  position: relative;
+.rolling__box {
+  background-color: red;
+  overflow: hidden;
+  position: absolute;
+  left: 31px;
+  top: 16px;
+  width: 578px;
+  height: 23px;
+  line-height: 22px;
+  background-color: #fff;
+  text-align: left; }
+
+.rolling__item {
+  font-size: 18px;
+  color: #7d7d7d;
+  font-weight: 600; }
+
+.suggestion__box {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 69px;
+  z-index: 10;
   width: 670px;
   height: 300px;
-  margin: 33px 0;
-  left: -14px;
-  background-color: white; }
+  border: 1px solid #f95139;
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: left; }
 
 .nav {
   display: flex;

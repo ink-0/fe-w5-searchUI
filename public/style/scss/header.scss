@@ -85,16 +85,53 @@ input {
         }
     }
 }
-.searchUI__box{
-    border: 1px solid #ff463f;
-    border-radius: 10px;
-    position:relative;
+.rolling {
+    &__box{
+        background-color: red;
+        overflow: hidden;
+        position: absolute;
+        left: 31px;
+        top: 16px;
+        width: 578px;
+        height: 23px;
+        line-height: 22px;
+        background-color: #fff;
+        text-align: left;
+    }
+
+    &__item{
+        font-size: 18px;
+        color: rgb(125, 125, 125);
+        font-weight: 600;
+    }
+}
+
+
+
+.suggestion__box{
+    // border: 1px solid #ff463f;
+    // border-radius: 10px;
+    // position:relative;
+    // width: 670px;
+    // height: 300px;
+    // margin:33px 0;
+    // left:-14px;
+    // background-color: white;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 69px;
+    z-index: 10;
     width: 670px;
     height: 300px;
-    margin:33px 0;
-    left:-14px;
-    background-color: white;
+    border: 1px solid #f95139;
+    border-radius: 10px;
+    background-color: #fff;
+    // background-color: blue;
+    box-sizing: border-box;
+    text-align: left;
 }
+
 
 .nav {
 
