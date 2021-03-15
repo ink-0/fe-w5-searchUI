@@ -4,6 +4,8 @@ const express = require('express');
 const ejs = require('ejs');
 const path = require('path');
 const cors = require('cors');
+
+
 //--------------------------------------------
 //라우터 선언
 const index_router =require('./routes/index.js');
@@ -20,6 +22,7 @@ app.engine('ejs',require('ejs').renderFile);
 
 //--------------------------------------------
 //미들웨어 등록 시작 
+
 app.use(express.static(path.join(__dirname,'public')));
 app.use('/',index_router);
 // app.use('/image',image_router);
@@ -30,9 +33,9 @@ app.listen(3000,(err)=>{
     console.log('The server is listening on port 3000');
 });
 //get 메서드의 url 이 기본값이 되게 되면 메인 화면 출력
-app.get('/',(req,res)=>{
-    res.sendFile(__dirname+'/views/index.ejs');
-});
+// app.get('/',(req,res)=>{
+//     res.sendFile(__dirname+'/views/index.ejs');
+// });
 
 // 에러 catch
 app.use((req,res)=>{

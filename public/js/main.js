@@ -1,20 +1,27 @@
 //가져올 데이터들의 url 정의 
-const url = "http://localhost:3000/image";
 
+const url = {
+    mileageURL : "http://localhost:3000/mileageList",
+    rollKeywordURL : "http://localhost:3000/keyword",
+}
 //json 이미지 fetch에서 가져오기
-import {getBestboxImg} from "./api.js";
+import {getMileageImg, getRollKeyword} from "./api.js";
 
 // 기능 구현 
 import {carousel} from "./carousel.js";
+import { rollingKeyword } from "./rollingKeyword.js";
 import {getRollingTop10} from "./searchUI.js";
 // import {searchUI} from "./searchUI,js";
 
 
-
-getBestboxImg(url);
+//기획전 캐로셀
+getMileageImg(url.mileageURL);
 carousel();
 
-getRollingTop10();
+
+
+getRollKeyword(url.rollKeywordURL);
+rollingKeyword();
 // searchUI();
 
 // let data;

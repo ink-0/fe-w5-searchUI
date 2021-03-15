@@ -10,7 +10,7 @@ router.get('/',(req,res)=>{
 
 
 const mileageListData = JSON.parse(fs.readFileSync("./data/mileageList.json", "utf8"));
-router.get("/image", (req, res, next) => {
+router.get("/mileageList", (req, res, next) => {
   // console.log("data는제발제발",data);
   res.json(mileageListData);
 });
