@@ -28,9 +28,9 @@ app.use('/',index_router);
 // app.use('/image',image_router);
 app.use(cors());
 
-app.listen(3000,(err)=>{
+app.listen(3004,(err)=>{
     if(err) return console.log(err);
-    console.log('The server is listening on port 3000');
+    console.log('The server is listening on port 3004');
 });
 //get 메서드의 url 이 기본값이 되게 되면 메인 화면 출력
 // app.get('/',(req,res)=>{

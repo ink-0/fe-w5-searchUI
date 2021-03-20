@@ -1,13 +1,16 @@
-import {factors} from "./util.js";
-const {inpSearch} = factors;
+import {$} from "./util.js";
 
+const factors = {
+    inpSearch : $(".head__search__box"),
+
+}
 const getRollingTop10 = () =>{
 
-    inpSearch.addEventListener('click',()=>{
+    factors.inpSearch.addEventListener('click',()=>{
         console.log("됏지롱");
-        inpSearch.style
+        factors.inpSearch.style
         // inpSearch.style.border = `1px solid #ff0000;`;
-        inpSearch.style.border = "1px solid #ff463f";
+        factors.inpSearch.style.border = "1px solid #ff463f";
     });
 }
 

@@ -1,8 +1,8 @@
 //가져올 데이터들의 url 정의 
 
 const url = {
-    mileageURL : "http://localhost:3000/mileageList",
-    rollKeywordURL : "http://localhost:3000/keyword",
+    mileageURL : "http://localhost:3004/mileageList",
+    rollKeywordURL : "http://localhost:3004/keyword",
 }
 //json 이미지 fetch에서 가져오기
 import {getMileageImg, getRollKeyword} from "./api.js";
