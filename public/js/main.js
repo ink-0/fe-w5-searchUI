@@ -9,7 +9,7 @@ import {getMileageImg, getRollKeyword} from "./api.js";
 
 // 기능 구현 
 import {carousel} from "./carousel.js";
-import { rollingKeyword } from "./rollingKeyword.js";
+import { rolltheKeyword,openSugKeyword} from "./rollingKeyword.js";
 import {getRollingTop10} from "./searchUI.js";
 // import {searchUI} from "./searchUI,js";
 
@@ -21,7 +21,9 @@ carousel();
 
 
 getRollKeyword(url.rollKeywordURL);
-rollingKeyword();
+openSugKeyword();
+// rolltheKeyword();
+
 // searchUI();
 
 // let data;
