@@ -11,7 +11,7 @@ import {getMileageImg, getRollKeyword} from "./api.js";
 import {carousel} from "./carousel.js";
 import { rollingKeyword,openSugKeyword} from "./rollingKeyword.js";
 
-import { openSearchKeyword,getSearchKeyword,getSearchInp } from "./searchKeyword.js";
+import { openSearchKeyword,getSearchKeyword,getSearchInp,setColorInp } from "./searchKeyword.js";
 
 
 //기획전 캐로셀
@@ -27,6 +27,7 @@ rollingKeyword(0);
 
 getSearchKeyword();
 getSearchInp();
+// setColorInp();
 
 
 

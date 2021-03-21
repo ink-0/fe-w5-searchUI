@@ -6,7 +6,7 @@ const factors = {
     searchInp : $(".inp_search"),
     suggestionBox : $(".suggestion__box"),
     
-    searchwordBox : $(".searchword__box"),
+    searchwordBox: $(".searchword__box"),
 
 }
 
@@ -40,6 +40,8 @@ const getSearchKeyword= (word) => {
                 factors.searchwordBox.innerHTML = inpWord;
                 
             })
+            let userSearchInp = $$(".searchword__list");
+            setColorInp(userSearchInp);
         });
 }
 
@@ -64,5 +66,12 @@ const getSearchInp = () => {
     })
     
 }
-  
-export { openSearchKeyword, getSearchKeyword,getSearchInp };
+
+const setColorInp = (value) => {
+    console.log(value);
+    value.style.color = "red";
+    //칼라 지정해야함
+    //데이터 페치될때마다 리스트를받아야해서 getSearchKeyword에 $로 정의하고 넣어둠
+    //정규표현식사용 & html 선택자 & 함수끼리 데이터 주고받기 고민해보기
+}
+export { openSearchKeyword, getSearchKeyword,getSearchInp,setColorInp };
