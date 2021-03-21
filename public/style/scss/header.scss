@@ -20,8 +20,6 @@ body{
 //     align-self: center;
 // }
 
-
-
 %pure-btn {
     border: 0;
     background-color: transparent;
@@ -164,10 +162,9 @@ input {
         font-size: 14px;
         letter-spacing: -.05em;
         color: #222;
-
-
     }
 }
+
 .num_rank{
     margin-right: 10px;
     font-weight: 700;
@@ -176,6 +173,32 @@ input {
 
 
 }
+.searchword {
+    &__box {
+        display:none;
+        position: absolute;
+        left: 0;
+        top: 48px;
+        z-index: 10;
+        width: 670px;
+        // height: 300px;
+        border: 1px solid #f95139;
+        border-radius: 10px;
+        background-color: #fff;
+        // background-color: blue;
+        box-sizing: border-box;
+        text-align: left;
+        // padding: 20px 20px;
+        overflow: hidden;
+        padding: 25px 29px 23px;
+    }
+
+    &__list{
+        list-style: none;
+    }
+}
+
+
 
 
 .nav {

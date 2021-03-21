@@ -83,13 +83,4 @@ export function getRollKeyword(url) {
 
 
   
-// searchUI.js
-// export function getTop10(url) {
-//   let data;
-//   const promise = fetch(url)
-//     .then(response =>response.json())
-//     .then(json =>{
-//       //inpSearch 말고 데이터 들어갈 장소
-//       const {inpSearch}
-//     })
-// }
+

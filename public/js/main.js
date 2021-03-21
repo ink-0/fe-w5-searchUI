@@ -9,9 +9,9 @@ import {getMileageImg, getRollKeyword} from "./api.js";
 
 // 기능 구현 
 import {carousel} from "./carousel.js";
-import { rolltheKeyword,openSugKeyword} from "./rollingKeyword.js";
-import {getRollingTop10} from "./searchUI.js";
-// import {searchUI} from "./searchUI,js";
+import { rollingKeyword,openSugKeyword} from "./rollingKeyword.js";
+
+import { openSearchKeyword,getSearchKeyword,getSearchInp } from "./searchKeyword.js";
 
 
 //기획전 캐로셀
@@ -22,15 +22,11 @@ carousel();
 
 getRollKeyword(url.rollKeywordURL);
 openSugKeyword();
-// rolltheKeyword();
+openSearchKeyword();
+rollingKeyword(0);
 
-// searchUI();
+getSearchKeyword();
+getSearchInp();
 
-// let data;
-// const promise = fetch("/image")
-//   .then(response => response.json())
-//   .then(json => {
-//     data = json;
-//     console.log(data);
-//   });
+
 

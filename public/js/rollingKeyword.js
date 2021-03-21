@@ -1,36 +1,17 @@
 import {$,$$} from "./util.js";
-// const {rollingbox,rollingList,rollingItems,inpSearch,suggestionBox} = factors;
+
 const factors = {
-    inpSearch : $(".head__search__box"),
+    searchBox : $(".head__search__box"),
     rollingbox: $(".rolling__box"),
     rollingItems : $$(".rolling__item"),
     rollingList : $(".rolling__list"),
 
     suggestionBox : $(".suggestion__box"),
-    suggestionItems : $$(".suggestion__keyword"),
+    suggestionItems: $$(".suggestion__keyword"),
 }
 
 
-// const rollingKeyword = () => {
-//     let counter = 1;
-//     const size = 22;
-//     const len = factors.rollingItems.length;
-//     console.log("검색어 하나 높이",size);
-//     console.log("검색어 총 개수",len);
-//     factors.rollingList.style.transform = "translateY(" + -size * counter + "px)";
-
-
-    
-//     rollthekeyword(1);
-   
-//     // setTimeout(()=>{
-//     //     clearTimeout(rolling)
-//     // },100000);
-   
-
-// }
-
-const rolltheKeyword = (counter) => {
+const rollingKeyword = (counter) => {
     const size = 22;
     const len = factors.rollingItems.length;
     setInterval(() => {
@@ -53,21 +34,23 @@ const rolltheKeyword = (counter) => {
         }
     }, 2000);
 }
-rolltheKeyword(0);
-
+//suggest이벤트
+//클릭시 멈추게 하기 만들기
 const openSugKeyword = () => {
-    factors.inpSearch.addEventListener('click', () => {
-        clearInterval(rolltheKeyword);
+    factors.searchBox.addEventListener('click', () => {
+        clearInterval(rollingKeyword);
         factors.rollingbox.style.display = "none";
-        factors.inpSearch.style.border = "1px solid #ff463f";
+        factors.searchBox.style.border = "1px solid #ff463f";
         factors.suggestionBox.style.display = "block";
     }
-)}
-//suggest이벤트
+    )
+}
+
+
 
 
 
 // });
 
 
-export {rolltheKeyword,openSugKeyword};
+export {rollingKeyword,openSugKeyword};

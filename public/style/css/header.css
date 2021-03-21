@@ -121,6 +121,24 @@ input {
   color: #222;
   font-size: 14px; }
 
+.searchword__box {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  z-index: 10;
+  width: 670px;
+  border: 1px solid #f95139;
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden;
+  padding: 25px 29px 23px; }
+
+.searchword__list {
+  list-style: none; }
+
 .nav {
   display: flex;
   position: relative;
